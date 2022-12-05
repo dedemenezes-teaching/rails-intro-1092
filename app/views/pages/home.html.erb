@@ -10,7 +10,15 @@
 </ul>
 
 <%# FORM %>
+<!-- name of the parameters that arrive in the controller
+     comes from the name of the inputs of a form -->
+<form action="/" method='GET'>
+  <input type="text" name="player" placeholder='Who is your favorie one?' value='<%= params[:player] %>'>
+  <input type="submit" value="Search">
+</form>
 
+<!-- the form may make the request for another route
+     because it will work the same way :ok -->
 <form action="/contact" method='GET'>
   <input type="text" name="player" placeholder='Who is your favorie one?' value='<%= params[:player] %>'>
   <input type="submit" value="Search">
