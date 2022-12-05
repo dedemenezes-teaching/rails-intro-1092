@@ -71,3 +71,7 @@ To run Ruby code inside the view, you need to use icecream brackets.
 - <%= code that will be executed AND ALSO printed in the HTML %>
 
 Remembering that in loops, we don't print the loop itself.. But we usually print something from the block.
+
+
+<img width="857" alt="Screenshot 2022-08-15 120931 (1)" src="https://user-images.githubusercontent.com/80218755/205759377-bc4bb4c4-6d68-4d6e-ab0d-09107acf6b7a.png">
+
