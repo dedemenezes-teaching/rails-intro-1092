@@ -1,0 +1,29 @@
+<h1>Welcome to the World Best Player of the year</h1>
+
+<p>Time now is <%= Time.now %></p>
+<p>Time now is <% Time.now %></p>
+
+<ul>
+  <% @players.each do |player| %>
+    <li><%= player.upcase %></li>
+  <% end %>
+</ul>
+
+<%# FORM %>
+
+<form action="/contact" method='GET'>
+  <input type="text" name="player" placeholder='Who is your favorie one?' value='<%= params[:player] %>'>
+  <input type="submit" value="Search">
+</form>
+
+
+
+<%# LINKS %>
+
+<%# <a href="ANCHOR_URL">ANCHOR TEXT</a> %>
+<%# <a href="/about">About</a> %>
+<%# LINK HELPER %>
+<%# link_to('TEXT', PREFIX_PATH) %>
+<%= link_to('About', about_path) %>
+
+<%= link_to 'Contact', contact_path %>

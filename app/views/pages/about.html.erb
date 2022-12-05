@@ -1,0 +1,10 @@
+<h1>This is our about page</h1>
+<p>Check more information below...</p>
+
+<ul>
+  <% @partners.each do |partner| %>
+    <li><%= partner.upcase %></li>
+  <% end %>
+</ul>
+
+<a href="/">Back to home</a>
